@@ -2,7 +2,7 @@ require 'pry'
 class CashRegister
 @@manifest = []
 @@arr = {}
-  attr_accessor :total, :discount, :title, :price, :quantity
+  attr_accessor :total, :discount, :title, :price, :quantity, :items
 
   def initialize(discount = 0)
     @total = 0
@@ -14,6 +14,7 @@ class CashRegister
       @title = title
       @price = price
       @quantity = quantity
+      @items = 
       self.total += price*quantity
   end
 
