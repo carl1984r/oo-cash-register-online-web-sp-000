@@ -1,14 +1,14 @@
 require 'pry'
 class CashRegister
-@@manifest = []
+
+  @@manifest = []
 
   attr_accessor :total, :discount, :title, :price, :quantity, :items
 
   def initialize(discount = 0)
     @total = 0
     @discount = discount
-    @items = []
-    @@manifest << self
+    @items = []    
   end
 
   def add_item(title, price, quantity = 1)
