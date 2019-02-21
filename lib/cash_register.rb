@@ -30,7 +30,7 @@ class CashRegister
   def items
     arr = []
     arr << self.title
-    arr 
+    arr
     binding.pry
   end
 
