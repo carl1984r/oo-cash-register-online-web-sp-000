@@ -30,7 +30,7 @@ class CashRegister
   def items
     arr = []
     arr << self.title
-    arr 
+    arr
   end
 
   def void_last_transaction
