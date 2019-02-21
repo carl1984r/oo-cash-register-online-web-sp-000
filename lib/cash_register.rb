@@ -29,9 +29,8 @@ class CashRegister
 
   def items
     arr = []
-    arr << @items
-    arr
-    binding.pry
+    arr << self.title
+    arr 
   end
 
   def void_last_transaction
