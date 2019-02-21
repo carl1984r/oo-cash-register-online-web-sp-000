@@ -15,7 +15,7 @@ class CashRegister
       @title = title
       @price = price
       @quantity = quantity
-      @items =
+      @items << self.title
       self.total += price*quantity
   end
 
@@ -27,13 +27,6 @@ class CashRegister
     else
       "There is no discount to apply."
   end
-  end
-
-  def items
-    arr = []
-    arr << self.title
-    arr
-    binding.pry
   end
 
   def void_last_transaction
