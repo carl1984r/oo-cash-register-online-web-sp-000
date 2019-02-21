@@ -14,7 +14,7 @@ class CashRegister
       @title = title
       @price = price
       @quantity = quantity
-      @items << self.title
+      @items = title
       self.total += price*quantity
   end
 
