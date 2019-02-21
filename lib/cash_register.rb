@@ -1,7 +1,7 @@
 require 'pry'
 class CashRegister
 @@manifest = []
-@@arr = {}
+
   attr_accessor :total, :discount, :title, :price, :quantity, :items
 
   def initialize(discount = 0)
